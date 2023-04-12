@@ -12,7 +12,7 @@ export const DeleteBtn = styled.button`
   background: #000;
   border-radius: 5px;
   border: none;
-  // font-family: 'Asap';
+  cursor: pointer;
 
   &:hover {
     color: #fff;
