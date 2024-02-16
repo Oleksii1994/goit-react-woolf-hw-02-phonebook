@@ -11,7 +11,6 @@ export const ContactList = styled.ul`
 
   font-size: 20px;
   min-width: 600px;
-  height: 156px;
   border-radius: 12px;
   box-shadow: 0px 8px 16px rgba(0, 255, 255, 0.5),
     0px 4px 8px rgba(0, 255, 255, 0.5), 0px 4px 8px rgba(0, 255, 255, 0.5),

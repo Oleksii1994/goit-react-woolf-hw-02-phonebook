@@ -14,10 +14,18 @@ export class App extends Component {
     filter: '',
   };
 
-  formSubmitHandler = data => {
-    this.setState(prevState => ({
-      contacts: [...prevState.contacts, { ...data, id: nanoid() }],
-    }));
+  formSubmitHandler = async data => {
+    const { contacts } = this.state;
+
+    const isContactExists = contacts.find(
+      contact => contact.number === data.number
+    );
+
+    isContactExists
+      ? alert('This number already exists')
+      : this.setState(prevState => ({
+          contacts: [...prevState.contacts, { ...data, id: nanoid() }],
+        }));
   };
 
   onFilter = e => {
